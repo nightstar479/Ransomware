@@ -19,7 +19,15 @@ int send_key(char *pKey, char *pIv);
 
 int main (int argc, char * argv[])
 {
+	if (strcmp(argv[1],"-help")==0){
+		usage();
+	}
 	printf("Bon travail!\n");
 }
 
+
+void usage(){
+	
+	printf("Ce programme a une vocation purement éducative! \n");
+};
 
