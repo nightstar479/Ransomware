@@ -14,8 +14,8 @@ int is_encrypted(char *filename){
         if(strcmp(extension,to_compare)==0){
             return 1;
         }
+
         else{
-     
             return 0;
         }
     }
