@@ -26,7 +26,7 @@ int main (int argc, char * argv[]){
 	char *pKey = (char*)malloc(2 * sizeof(key) + 1); /*tu fais en fonction de la taille de la clé*/
 	char *pIv = (char*)malloc(2 * sizeof (key) + 1);
 
-	
+
 	generate_key(key,sizeKey,iv,sizeIv,pKey,pIv);
 	printf("Voici pKey : %s\n",pKey);
 	printf("Voici pIV : %s\n",pIv);
@@ -45,7 +45,7 @@ void usage(){
 	printf("Ce programme a une vocation purement éducative! \n");
 };
 
-int is_encrypted{
+int is_encrypted(char *filename){
 
 	char *extension = strchr(filename, '.');
     char to_compare[]=".enc";
